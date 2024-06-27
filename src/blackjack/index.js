@@ -1,5 +1,7 @@
 import _ from 'underscore';
-import {crearDeck} from './usecases/crear-deck.js';
+// import crearDeck, {miNombre} from './usecases/crear-deck'; Exportación por defecto más independiente
+// import {crearDeck as crearNuevoDeck} from './usecases/crear-deck.js'; -- Crea un alias para usar en este archivo
+import {crearDeck} from './usecases/crear-deck.js'; // Exportación individual o independiente
 
 /**
  * 2C = Two of Clubs
@@ -26,7 +28,7 @@ const divCartasComputadora = document.querySelector('#computadora-cartas');
 const puntosHTML = document.querySelectorAll('small');
 
 
-crearDeck();
+deck = crearDeck( tipos, especiales );
 
 
 // Esta función me permite tomar una carta
