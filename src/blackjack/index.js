@@ -1,9 +1,10 @@
 import _ from 'underscore';
 // import crearDeck, {miNombre} from './usecases/crear-deck'; Exportación por defecto más independiente
 // import {crearDeck as crearNuevoDeck} from './usecases/crear-deck.js'; -- Crea un alias para usar en este archivo
-import {crearDeck} from './usecases/crear-deck.js'; // Exportación individual o independiente
-import {pedirCarta} from './usecases/pedir-carta.js';
-import {valorCarta} from './usecases/valor-carta.js';
+
+import { crearDeck, pedirCarta, valorCarta }from './usecases';
+
+
 /**
  * 2C = Two of Clubs
  * 2D = Two of Diamonds
